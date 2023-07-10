@@ -28,12 +28,16 @@ class Banco:
         print(f"Saldo atual: R$ {self.saldo:.2f}")
 
 
-banco = Banco()
+def main():
+    banco = Banco()
 
-banco.depositar(3000.50)
-banco.depositar(700.75)
-banco.sacar(500)
-banco.sacar(900)
-banco.depositar(780.25)
+    banco.depositar(3000.50)
+    banco.depositar(700.75)
+    banco.sacar(500)
+    banco.depositar(780.25)
 
-banco.extrato()
+    banco.extrato()
+
+
+if __name__ == "__main__":
+    main()
